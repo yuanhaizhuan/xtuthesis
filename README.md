@@ -6,8 +6,7 @@ LaTeX Thesis Template for Xiangtan University (thuthesis-based development)
 # 下载
 * 开发版：[GitHub](https://github.com/yuanhaizhuan/xtuthesis)
 
-# 升级
-## 手动更新
+# 更新
 从 [GitHub](https://github.com/yuanhaizhuan/xtuthesis) 下载放入论文目录，执行命令（Windows 用户在文件夹空白处按`Shift+鼠标右键`，点击“在此处打开命令行窗口”）：
 
     xetex xtuthesis.ins
