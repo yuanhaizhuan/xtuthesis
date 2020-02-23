@@ -64,13 +64,13 @@ test:
 clean:
 #	$(LATEXMK) -c $(PACKAGE).dtx $(THESIS) $(SPINE)
 	-@$(RM) *~ main-survey.*
-	-@$(RM) *.aux *.toc *.log *.fdb_latexmk *.out *.thm *.hd *.idx # *.cls
+	-@$(RM) *.aux *.toc *.log *.fdb_latexmk *.out *.thm *.hd *.idx *.bbl *.blg # *.cls
 
 cleanall: clean
 	-@$(RM) $(PACKAGE).pdf $(THESIS).pdf $(SPINE).pdf
 
 distclean: # cleanall
-	-@$(RM) *.aux *.toc *.log *.fdb_latexmk *.out *.thm *.cls *.hd *.idx *.pdf
+	-@$(RM) *.aux *.toc *.log *.fdb_latexmk *.out *.thm *.cls *.hd *.idx *.pdf *.bbl *.blg 
 
 check: FORCE_MAKE
 ifeq ($(version),)
