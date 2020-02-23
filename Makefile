@@ -38,6 +38,7 @@ $(PACKAGE).pdf: cls FORCE_MAKE
 
 $(THESIS).pdf: cls FORCE_MAKE
 	$(LATEXMK) $(THESIS)
+	bibtex $(THESIS).aux
 
 $(SPINE).pdf: cls FORCE_MAKE
 	$(LATEXMK) $(SPINE)

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: xtuthesis-numeric.bst
+A level-1 auxiliary file: bu.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: ref/refs.bib
+You've used 22 entries,
+            4108 wiz_defined-function locations,
+            1011 strings with 9492 characters,
+and the built_in function-call counts, 87772 in all, are:
+= -- 2155
+> -- 9584
+< -- 12014
++ -- 3558
+- -- 914
+* -- 654
+:= -- 12376
+add.period$ -- 75
+call.type$ -- 22
+change.case$ -- 37
+chr.to.int$ -- 3137
+cite$ -- 22
+duplicate$ -- 481
+empty$ -- 1238
+format.name$ -- 287
+if$ -- 22683
+int.to.chr$ -- 1
+int.to.str$ -- 23
+missing$ -- 0
+newline$ -- 131
+num.names$ -- 70
+pop$ -- 3894
+preamble$ -- 1
+purify$ -- 22
+quote$ -- 0
+skip$ -- 8880
+stack$ -- 0
+substring$ -- 4369
+swap$ -- 56
+text.length$ -- 213
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 302
+warning$ -- 0
+while$ -- 277
+width$ -- 0
+write$ -- 296

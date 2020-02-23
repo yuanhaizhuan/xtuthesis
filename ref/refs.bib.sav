@@ -214,7 +214,7 @@
   url             = {http://www.oclc.org/about/history/default.htm},
 }
 
-@online{xtuthesis,
+@online{thuthesis,
   author          = {薛瑞尼},
   title           = {ThuThesis: 清华大学学位论文模板},
   urldate         = {2019-04-27},

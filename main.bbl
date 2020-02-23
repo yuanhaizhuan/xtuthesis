@@ -1,0 +1,144 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[薛瑞尼(2017)]{xtuthesis}
+薛瑞尼.
+\newblock ThuThesis: 清华大学学位论文模板 [EB/OL].
+\newblock 2017\allowbreak[2019-04-27].
+\newblock \url{https://github.com/xueruini/thuthesis}.
+
+\bibitem[Knuth(1989)]{tex}
+Knuth~D~E.
+\newblock The {\TeX}book.
+\newblock 15th ed.
+\newblock Reading, MA: Addison-Wesley Publishing Company, 1989.
+
+\bibitem[Goosens et~al.(1994)Goosens, Mittelbach, and Samarin]{companion}
+Goosens~M, Mittelbach~F, Samarin~A.
+\newblock The {\LaTeX} companion.
+\newblock Reading, MA: Addison-Wesley Publishing Company, 1994: 112-125.
+
+\bibitem[Gr{\"o}ning et~al.(2004)Gr{\"o}ning, Nilsson, Ruffieux, Clergereaux,
+  and Gr{\"o}ning]{ColdSources}
+Gr{\"o}ning~P, Nilsson~L, Ruffieux~P, et~al.
+\newblock Encyclopedia of nanoscience and nanotechnology: volume~1.
+\newblock USA: American Scientific Publishers, 2004: 547-579.
+
+\bibitem[Krasnogor(2004)]{Krasnogor2004e}
+Krasnogor~N.
+\newblock Towards robust memetic algorithms //
+Hart~W, Krasnogor~N, Smith~J.
+\newblock Studies in Fuzziness and Soft Computing: volume 166\ Recent Advances
+  in Memetic Algorithms.
+\newblock New York: Springer Berlin Heidelberg, 2004: 185-207.
+
+\bibitem[阎真(2001)]{clzs}
+阎真.
+\newblock 沧浪之水.
+\newblock 北京: 人民文学出版社, 2001: 185-207.
+
+\bibitem[班固(1998)]{zjsw}
+班固.
+\newblock 苏武传 //
+郑在瀛, 汪超宏, 周文复.
+\newblock 新古文观止丛书: 第 2 卷\ 传记散文英华.
+\newblock 武汉: 湖北人民出版社, 1998: 65-69.
+
+\bibitem[{Chafik El Idrissi} et~al.(1994){Chafik El Idrissi}, {Roney},
+  {Frigon}, and {Larzilli{\`e}re}]{ELIDRISSI94}
+{Chafik El Idrissi}~M, {Roney}~A, {Frigon}~C, et~al.
+\newblock Measurements of total kinetic-energy released to the {$N=2$}
+  dissociation limit of {H}$_2$ --- evidence of the dissociation of very high
+  vibrational {R}ydberg states of {H}$_2$ by doubly-excited states.
+\newblock Chemical Physics Letters, 1994, 224\penalty0 (10):\penalty0 260-266.
+
+\bibitem[Mellinger et~al.(1996)Mellinger, Vidal, and Jungen]{MELLINGER96}
+Mellinger~A, Vidal~C~R, Jungen~C.
+\newblock Laser reduced fluorescence study of the carbon-monoxide nd triplet
+  {R}ydberg series-experimental results and multichannel quantum-defect
+  analysis.
+\newblock J. Chem. Phys., 1996, 104\penalty0 (5):\penalty0 8913-8921.
+
+\bibitem[Shell(2002)]{SHELL02}
+Shell~M.
+\newblock How to use the {IEEEtran \LaTeX} class.
+\newblock Journal of {\LaTeX} Class Files, 2002, 12\penalty0 (4):\penalty0
+  100-120.
+
+\bibitem[猪八戒(2005)]{zhubajie}
+猪八戒.
+\newblock 论流体食物的持久保存 [硕士学位论文].
+\newblock 北京: 广寒宫大学, 2005.
+
+\bibitem[Jeyakumar(2004)]{metamori2004}
+Jeyakumar~A~R.
+\newblock Metamori: A library for incremental file checkpointing [D].
+\newblock Blacksburg: Virgina Tech, 2004.
+
+\bibitem[沙和尚(2005)]{shaheshang}
+沙和尚.
+\newblock 论流沙河的综合治理 [博士学位论文].
+\newblock 北京: 清华大学, 2005.
+
+\bibitem[Zadok(2001)]{FistSystem01}
+Zadok~E.
+\newblock {FiST: A System for Stackable File System Code Generation} [D].
+\newblock USA: Computer Science Department, Columbia University, 2001.
+
+\bibitem[{IEEE Std 1363-2000}(2000)]{IEEE-1363}
+{IEEE Std 1363-2000}.
+\newblock {IEEE} standard specifications for public-key cryptography.
+\newblock New York: IEEE, 2000.
+
+\bibitem[Kim et~al.(2003)Kim, Woo, Yeom, Park, and Park]{DPMG}
+Kim~S, Woo~N, Yeom~H~Y, et~al.
+\newblock Design and {I}mplementation of {D}ynamic {P}rocess {M}anagement for
+  {G}rid-enabled {MPICH} //
+Dongarra~J, Laforenza~D, Orlando~S.
+\newblock the 10th European PVM/MPI Users' Group Conference.
+\newblock Venice, Italy: Springer-Verlag, 2003.
+
+\bibitem[Kocher et~al.(1999)Kocher, Jaffe, and Jun]{kocher99}
+Kocher~C, Jaffe~J, Jun~B.
+\newblock Differential power analysis //
+Wiener~M.
+\newblock Lecture Notes in Computer Science: volume 1666\ Advances in
+  Cryptology ({CRYPTO}~'99).
+\newblock Germany: Springer-Verlag, 1999: 388-397.
+
+\bibitem[Woo et~al.(1995)Woo, Bailey, Yarrow, Wijngaart, Harris, and
+  Saphir]{NPB2}
+Woo~A, Bailey~D, Yarrow~M, et~al.
+\newblock The {NAS} parallel benchmarks 2.0 [R/OL].
+\newblock The Pennsylvania State University CiteSeer Archives, 1995.
+\newblock \url{http://www.nasa.org/}.
+
+\bibitem[萧钰(2001)]{chuban2001}
+萧钰.
+\newblock 出版业信息化迈入快车道 [EB/OL].
+\newblock \allowbreak(2001-12-19)\allowbreak[2002-04-15].
+\newblock \url{http://www.creader.com/news/200112190019.htm}.
+
+\bibitem[{Online Computer Library Center, Inc.}(2000)]{oclc2000}
+{Online Computer Library Center, Inc.}
+\newblock History of {OCLC} [EB/OL].
+\newblock 2000\allowbreak[2000-01-08].
+\newblock \url{http://www.oclc.org/about/history/default.htm}.
+
+\bibitem[贾宝玉\ 等(1800)贾宝玉, 林黛玉, 薛宝钗, and
+  贾探春]{cnarticle}
+贾宝玉, 林黛玉, 薛宝钗, 等.
+\newblock 论刘姥姥食量大如牛之现实意义.
+\newblock 红楼梦杂谈, 1800, 224:\penalty0 260-266.
+
+\bibitem[王重阳\ 等(2006)王重阳, 黄药师, 欧阳峰, 洪七公, and
+  段皇帝]{cnproceed}
+王重阳, 黄药师, 欧阳峰, 等.
+\newblock 武林高手从入门到精通 //
+第~$N$~次华山论剑.
+\newblock 西安, 中国: 金大庸, 2006.
+
+\end{thebibliography}
