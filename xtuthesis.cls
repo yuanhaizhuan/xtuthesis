@@ -23,7 +23,7 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{xtuthesis}
-[2020/02/03 1.0.1 Xiangtan University Thesis Template]
+[2020/02/24 1.0.1 Xiangtan University Thesis Template]
 \RequirePackage{ifxetex}
 \RequireXeTeX
 \hyphenation{Xtu-Thesis}
@@ -665,12 +665,6 @@
 \renewcommand*\l@subsubsection{%
   \@dottedtocline{3}{\ifxtu@degree@bachelor 2.4em\else 3.5em\fi}{3.8em}}
 \xtu@define@key{
-  secret-level = {
-    name = secret@level,
-  },
-  secret-year = {
-    name = secret@year,
-  },
   title = {
     default = {标题},
   },
@@ -731,6 +725,12 @@
   },
   date = {
     default = {\the\year-\two@digits{\month}-\two@digits{\day}},
+  },
+  secret-level = {
+    name = secret@level,
+  },
+  secret-year = {
+    name = secret@year,
   },
   clc,
   udc,
@@ -823,7 +823,17 @@
   \pagestyle{xtu@empty}%
   \pagenumbering{Alph}%
   \xtu@pdfbookmark{-1}{\xtu@title}%
-  \xtu@coverpage % added by H.Z. Yuan
+  \ifxtu@degree@bachelor
+    \xtu@coverpage % 装订封面
+  \else
+    \ifxtu@degree@master
+      \xtu@coverpage % 装订封面
+    \else
+      \ifxtu@degree@doctor
+        \xtu@coverpage % 装订封面
+      \fi
+    \fi
+  \fi
   \xtu@titlepage
   \ifxtu@degree@graduate
     \cleardoublepage
@@ -832,7 +842,6 @@
   \clearpage
 }
 \newcommand\xtu@coverpage{%
-  %  \fi
   \newgeometry{
     top     = 1.0cm,
     bottom  = 4.0cm,
@@ -853,9 +862,7 @@
       \ifcsname lishu\endcsname
         \lishu\yihao\ziju{0.5}湘潭大学%
       \else
-           \includegraphics[width=0.6\linewidth]{logos/xtu-text-logo.pdf}%
-%%%         \includegraphics[trim=1cm 1cm 1cm 1cm, clip, width=0.6\linewidth]{xtu-text-logo.jpg}%
-%%        \includegraphics[trim=3cm 6cm 2cm 6cm, clip, width=0.6\linewidth]{xtu-text-logo.pdf}%
+         \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
       \fi
       \par
       \endgroup
@@ -865,7 +872,6 @@
   \begingroup
   \centering
   \parbox[t][2cm][t]{\textwidth}{%
-    %    \hskip -0.69cm%
     \ifxtu@degree@bachelor
       \centering \heiti\zihao{0}\ziju{0.3}{学士学位论文}
     \else
@@ -923,10 +929,6 @@
 %%%  \null\vskip 0.2cm%    %%changed by H.Z. Yuan
  \begingroup
     \centering
-%%%    \parbox[t][2cm][t]{\textwidth}{%
-%%%      \hskip -0.69cm%
-%%%      \xtu@titlepage@secret
-%%%    }\par
     \vskip 1.5cm%
     {\xtu@titlepage@title}%
     \vskip 0.85cm%
@@ -948,10 +950,6 @@
 %%%  \null\vskip 0.45cm% %%deleted by H.Z. Yuan
  \begingroup
     \centering
-%%%    \parbox[t][1.52cm][t]{\textwidth}{%
-%%%      \hskip -0.69cm%
-%%%      \xtu@titlepage@secret
-%%%    }\par
     \vskip 1.5cm%
     {\sffamily\yihao[1.575]\xtu@title\par}%
     \vskip 0.9cm%
@@ -1002,22 +1000,6 @@
   \end{tabular}
 }
 
-%%% \newcommand\xtu@titlepage@info@doctor{%
-%%%  \fangsong\sanhao[1.95]%
-%%%  \xtu@cover@info@tabular{2.8cm}{2.8cm}{0.82cm}{%
-%%%    \xtu@cover@item{培养单位}{}{\xtu@department}%
-%%%    \ifxtu@degree@type@academic
-%%%      \xtu@cover@item{学科}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{研究生}{\xtu@name@title}{\xtu@author}%
-%%%    \else
-%%%      \xtu@cover@item{申请人}{\xtu@name@title}{\xtu@author}%
-%%%    \fi
-%%%    \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
-%%%    \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
-%%%    \xtu@cover@item{联合导师}{\xtu@name@title}{\xtu@joint@supervisor}%
-%%%  }\par
-%%% }
-%%% changed by H.Z. Yuan
 \newcommand\xtu@titlepage@info@doctor{%
   \fangsong\sanhao[1.95]%
   \xtu@cover@info@tabular{2.8cm}{2.8cm}{0.82cm}{%
@@ -1031,23 +1013,6 @@
   }\par
 }
 
-%%%\newcommand\xtu@titlepage@info@master{%
-%%%  \fangsong\sanhao[1.95]%
-%%%  \xtu@cover@info@tabular{5.5em}{3.6cm}{0.82cm}{%
-%%%    \xtu@cover@item{培养单位}{}{\xtu@department}%
-%%%    \ifxtu@degree@type@academic
-%%%      \xtu@cover@item{学科}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{研究生}{\xtu@name@title}{\xtu@author}%
-%%%    \else
-%%%      \xtu@cover@item{工程领域}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{申请人}{\xtu@name@title}{\xtu@author}%
-%%%    \fi
-%%%    \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
-%%%    \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
-%%%    \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
-%%%  }\par
-%%%}
-%%% changed by H.Z. Yuan
 \newcommand\xtu@titlepage@info@master{%
   \fangsong\sanhao[1.95]%
   \xtu@cover@info@tabular{5.5em}{3.6cm}{0.82cm}{%
@@ -1267,7 +1232,7 @@
       \xtu@CJKunderline[5.9cm]{\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}}\par
     }%
     \vskip 0.45cm%
-    {\xiaosi[2]{\ziju{1}湘潭大学}\quad （北京）\par}%
+    {\xiaosi[2]{\ziju{1}湘潭大学}\quad （湘潭）\par}%
     \vskip 0.25cm%
     {\xiaosi[2]\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}\par}%
   \end{center}%
@@ -1302,13 +1267,12 @@
     {\wuhao\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}\par}%
   \end{center}%
 }
-\newcommand{\xtu@declaration}{  %%% added by H.Z. Yuan
+\newcommand{\xtu@declaration}{
 本人郑重声明：所呈交的学位论文，是本人在导师指导下，独立
 进行研究工作所取得的成果。尽我所知，除文中已经注明引用的内容
 外，本学位论文的研究成果不包含任何他人享有著作权的内容。对本
 论文所涉及的研究工作做出贡献的其他个人和集体，均已在文中以明
 确方式标明。
-
  }
 \newcommand{\xtu@authorization}{%
 本学位论文作者完全了解学校有关保留、使用学位论文的规定，
@@ -1316,43 +1280,26 @@
 允许论文被查阅和借阅。本人授权湘潭大学可以将本学位论文的全部
 或部分内容编入有关数据库进行检索，可以采用影印、缩印或扫描等
 复制手段保存和汇编本学位论文。
-%%% \ifxtu@degree@bachelor
-%%% 本人完全了解湘潭大学有关保留、使用学位论文的规定，即：学校有权保留学位
-%%% 论文的复印件，允许该论文被查阅和借阅；学校可以公布该论文的全部或部分内
-%%% 容，可以采用影印、缩印或其他复制手段保存该论文。
-%%% \else
-%%% 本人完全了解湘潭大学有关保留、使用学位论文的规定，即：
-%%% 湘潭大学拥有在著作权法规定范围内学位论文的使用权，其中包括：（1）已获学位的研究生
-%%% 必须按学校规定提交学位论文，学校可以采用影印、缩印或其他复制手段保存研究生上交的
-%%% 学位论文；（2）为教学和科研目的，学校可以将公开的学位论文作为资料在图书馆、资料
-%%% 室等场所供校内师生阅读，或在校园网上供校内师生浏览部分内容
-%%%  \ifxtu@degree@master
-%%% （3）根据《中华人民共和国学位条例暂行实施办法》，向国家图书馆报送可以公开的学位
-%%% 论文。\fi
-%%%
-%%% 本人保证遵守上述规定。
-%%% \fi
 }
 \newcommand{\xtu@authorizationaddon}{%
-%%%  \ifxtu@degree@bachelor(涉密的学位论文在解密后应遵守此规定)\else （保密的论文在解密后应遵守此规定）\fi}\fi
 （涉密论文按学校规定处理）}
 \newcommand{\xtu@authorsig}{\ifxtu@degree@bachelor 签\hskip1em名：\else 作者签名：\fi}
 \newcommand{\xtu@teachersig}{导师签名：}
 \newcommand{\xtu@frontdate}{%
   日\ifxtu@degree@bachelor\hspace{1em}\else\hspace{2em}\fi 期：}
-\newcommand\copyrightpage[1][]{%
+\newcommand\declareandcopyrightpage[1][]{%
   \ifxtu@degree@postdoc\relax\else
     \ifxtu@degree@bachelor\clearpage\else\cleardoublepage\fi%
     \def\xtu@@tmp{#1}
     \ifx\xtu@@tmp\@empty
-      \ifxtu@degree@bachelor\xtu@authorization@mk\else%
+      \ifxtu@degree@bachelor\xtu@declarationauthorization@mk\else%
         \begin{list}{}{%
           \topsep\z@%
           \listparindent\parindent%
           \parsep\parskip%
           \setlength{\leftmargin}{0.9mm}%
           \setlength{\rightmargin}{0.9mm}}%
-        \item[]\xtu@authorization@mk%
+        \item[]\xtu@declarationauthorization@mk%
         \end{list}%
       \fi%
     \else
@@ -1361,7 +1308,7 @@
   \fi
   \cleardoublepage
 }
-\newcommand{\xtu@authorization@mk}{%
+\newcommand{\xtu@declarationauthorization@mk}{%
   \ifxtu@degree@bachelor\vspace*{0.2cm}\else\vspace*{0.2cm}\fi % shit code!
   \begin{center}\yihao\heiti 湘潭大学\end{center}
   \vskip0.2cm
@@ -1457,29 +1404,9 @@
   labelsep*=0.5cm,
   itemindent=0pt,
 }
-\newcommand\xtu@declarename{声\hspace{\ccwd}明}
-\newcommand{\xtu@declaretext}{本人郑重声明：所呈交的学位论文，是本人在导师指导下
-  ，独立进行研究工作所取得的成果。尽我所知，除文中已经注明引用的内容外，本学位论
-  文的研究成果不包含任何他人享有著作权的内容。对本论文所涉及的研究工作做出贡献的
-  其他个人和集体，均已在文中以明确方式标明。}
-\newcommand{\xtu@signature}{签\hspace{1em}名：}
-\newcommand{\xtu@backdate}{日\hspace{1em}期：}
 \newenvironment{acknowledgements}{%
   \xtu@chapter*{\xtu@ack@name}%
 }{}
-\newcommand\statement[1][]{%
-  \def\xtu@@tmp{#1}%
-  \ifx\xtu@@tmp\@empty
-    \xtu@chapter*{\xtu@declarename}%
-    \par{\xiaosi\parindent2em\xtu@declaretext}\vskip2cm%
-    {\xiaosi\hfill\xtu@signature\xtu@underline[2.5cm]\relax
-      \xtu@backdate\xtu@underline[2.5cm]\relax}%
-  \else
-    \includepdf[pagecommand={\thispagestyle{xtu@empty}%
-      \addcontentsline{toc}{chapter}{\xtu@declarename}%
-    }]{#1}%
-  \fi
-}
 \let\acknowledgement\acknowledgements
 \let\endacknowledgement\endacknowledgements
 \def\xtu@starttoc#1{% #1: float type, prepend type name in \listof*** entry.

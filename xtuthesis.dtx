@@ -54,14 +54,14 @@
 % \IndexPrologue{\section{\indexname}}
 %
 % \title{\bfseries\color{violet}\xtuthesis：湘潭大学学位论文模板}
-% \author{{\fangsong 数学与计算科学学院}\\[5pt]\texttt{yhz@xtu.edu.cn}}
+% \author{{\fangsong 袁海专}\\[5pt]\texttt{yhz@xtu.edu.cn}}
 % \date{v\fileversion\ (\filedate)}
 % \maketitle\thispagestyle{empty}
 %
 %
 % \begin{abstract}\noindent
-%   此宏包旨在建立一个简单易用的湘潭大学学位论文模板，包括本科综合论文训练、硕士
-%   论文、博士论文以及博士后出站报告。
+%   此宏包旨在建立一个简单易用的湘潭大学学位论文模板， 基于薛瑞尼教授提供的清华大学学位论文模板修改，
+%    在此谨代表模板使用者对薛瑞尼教授表示诚挚的谢意。
 % \end{abstract}
 %
 % \vskip2cm
@@ -69,20 +69,11 @@
 % \begin{abstract}
 % \noindent
 % \begin{enumerate}
-% \item 本模板的发布遵守 \LaTeX{} Project Public License，使用前请认真阅读协议内
-%   容。
-% \item 本模板为作者根据
-%   湘潭大学教务处颁发的
-%   \href{http://www.law.xiangtan.edu.cn/publish/law/7024/2012/20120216153516317135347/20120216153516317135347_.html}{《综合论文训练写作指南》}，
-%   湘潭大学研究生院颁发的
-%   \href{http://yjsy.cic.xiangtan.edu.cn/docinfo/board/boarddetail.jsp?columnId=001050603&parentColumnId=0010506&itemSeq=5365}{《研究生学位论文写作指南》}，
-%   湘潭大学
-%   \href{http://postdoctor.xiangtan.edu.cn/info/czxz/1283}{%
-%     《编写“湘潭大学博士后研究报告”参考意见》}
-%   编写而成，旨在供湘潭大学毕业生撰写学位论文使用。
-% \item 湘潭大学教务处和研究生院只提供毕业论文写作指南，不提供官方模板，也不会授
-%   权第三方模板为官方模板，所以此模板仅为写作指南的参考实现，不保证格式审查老师
-%   不提意见。任何由于使用本模板而引起的论文格式审查问题均与本模板作者无关。
+% \item 本模板的发布遵守 \LaTeX{} Project Public License，使用前请认真阅读协议内容。
+% \item 本模板为作者根据湘潭大学学位论文的要求，基于薛瑞尼教授提供的清华大学学位论文模板修改而成，
+%   旨在供湘潭大学毕业生撰写学位论文使用。
+% \item  此模板仅为参考，不保证格式审查老师不提意见。
+%      任何由于使用本模板而引起的论文格式审查问题均与本模板作者无关。
 % \item 任何个人或组织以本模板为基础进行修改、扩展而生成的新的专用模板，请严格遵
 %   守 \LaTeX{} Project Public License 协议。由于违犯协议而引起的任何纠纷争端均与
 %   本模板作者无关。
@@ -100,7 +91,7 @@
 % \clearpage
 %
 % \section{模板介绍}
-% \xtuthesis{} (\textbf{T}sing\textbf{h}ua \textbf{U}niversity \LaTeX{}
+% \xtuthesis{} (\textbf{X}iang\textbf{t}an \textbf{U}niversity \LaTeX{}
 % \textbf{Thesis} Template) 是为了帮助湘潭大学毕业生撰写毕业论文而编写
 % 的 \LaTeX{} 论文模板。
 %
@@ -116,7 +107,7 @@
 % \begin{enumerate}
 %   \item 将模板升级到最新，见第~\ref{sec:upgrade} 节；
 %   \item 阅读 \href{https://github.com/yuanhaizhuan/xtuthesis/wiki/FAQ}{FAQ}；
-%   \item 在 Gixtub Issues 中按照说明
+%   \item 在 Github Issues 中按照说明
 %     \href{https://github.com/yuanhaizhuan/xtuthesis/issues/new?template=bug_report.md}{报告 bug}。
 % \end{enumerate}
 %
@@ -125,7 +116,7 @@
 %
 % \xtuthesis{} 已经包含在主要的 \TeX{} 发行版中，但是通常版本较旧，
 % 而且不方便更新。
-% 建议使用 Gixtub 上的最新版：
+% 建议使用 Github 上的最新版：
 % \url{https://github.com/yuanhaizhuan/xtuthesis}。
 %
 % 模板支持在 TeX Live、MacTeX 和 MiKTeX 平台下进行编译，但要求 2017 年或更新的发行版。
@@ -149,9 +140,10 @@
 % xtuthesis-numeric.bst & 参考文献样式文件\\
 % xtuthesis-author-year.bst & 参考文献样式文件\\
 % xtuthesis-bachelor.bst & 参考文献样式文件\\
-% xtu-text-logo.pdf & 校名 logo，系统无隶书字体时使用 \\\midrule
+% xtuthesis-logo.pdf & 校名 logo，系统无隶书字体时使用 \\\midrule
 % main.tex & 示例文档主文件\\
 % spine.tex & 书脊示例文档\\
+% logos/ & 学校logo图片路径\\
 % ref/ & 示例文档参考文献目录\\
 % data/ & 示例文档章节具体内容\\
 % figures/ & 示例文档图片路径\\
@@ -233,13 +225,13 @@
 %
 % \subsection{升级}
 % \label{sec:upgrade}
-% 如果需要升级 \xtuthesis{}，应当从 Gixtub 下载最新的版本，
+% 如果需要升级 \xtuthesis{}，应当从 Github 下载最新的版本，
 % 将 \file{xtuthesis.dtx}，\file{xtuthesis.ins}，\file{xiangtan.pdf}和
 % \file{xtuthesis-*.bst} 拷贝至工作目录覆盖相应的文件，然后按照
 % 第~\ref{sec:generate-cls} 节的内容生成新的模板和使用说明。
 %
 % 有时模板可能进行了重要的修改，不兼容已写好的正文内容，
-% 用户应当按照 Gixtub 上的示例文档的格式重新调整。
+% 用户应当按照 Github 上的示例文档的格式重新调整。
 %
 % \section{使用说明}
 % \label{sec:usage}
@@ -251,7 +243,7 @@
 %
 % 模板核心文件
 % 有：\file{xtuthesis.cls}，\file{xtuthesis-numeric.bst}，
-% \file{xtuthesis-author-year.bst} 和 \file{xiangtan.pdf}，
+% \file{xtuthesis-author-year.bst} 和 \file{xtuthesis-logo.pdf}，
 % 但如果没有示例文档会较难下手，所以推荐从模板自带的示例文档入手。其中包括了论文
 % 写作用到的所有命令及其使用方法，只需用自己的内容进行相应替换就可以。对于不清
 % 楚的命令可以查阅本手册。下面的例子描述了模板中章节的组织形式，来自于示例文档，
@@ -286,11 +278,6 @@
 %
 % \DescribeOption{language}
 % 论文全文的主要语言。可选：\option{chinese}（默认），\option{english}。
-%
-% 注意，本科生《写作指南》要求“本科生(含国外来华留学本科生)非外语专业论文统一要求
-% 用中文书写。”研究生《写作指南》要求“外国人来华留学生可以用英文撰写学位论文，但
-% 须采用中文封面”，“除留学生外，学位论文一律须用汉语书写”，用户须提前与导师和院系
-% 的审查教师协商使用何种语言书写论文。
 % \begin{latex}
 %   \documentclass[degree=bachelor, language=english]{xtuthesis}
 % \end{latex}
@@ -318,11 +305,9 @@
 %
 % 然而自动配置的字体只能保证编译通过，但是还存在一些问题：
 % \begin{enumerate}
-%   \item 在其他平台上配置的 TeX Gyre 系列字体，虽然在风格上比较接近 Times 和 Arial，
-%     但是毕竟跟《写作指南》要求的字体不完全一致；
+%   \item 在其他平台上配置的 TeX Gyre 系列字体，在风格上比较接近 Times 和 Arial；
 %   \item Fandol 字库的字形较少，常常出现缺字的情况；
-%   \item 华文字库和 Fandol 字库虽然不违反《写作指南》的要求，
-%     但是其字形跟中易字库有所差别，这导致封面、标题的视觉效果与学校的 Word 示例不一致，
+%   \item 华文字库和 Fandol 字库跟中易字库有所差别，这导致封面、标题的视觉效果与学校的 Word 示例不一致，
 %     可能被审查老师认为格式不符合要求。
 % \end{enumerate}
 %
@@ -423,6 +408,14 @@
 %   }
 % \end{latex}
 %
+% \subsubsection{研究领域}
+% \begin{latex}
+%   \xtusetup{
+%     research  = {研究领域},
+%     research* = {Research in English},
+%   }
+% \end{latex}
+%
 % \subsubsection{作者姓名}
 % 作者姓名。
 % \begin{latex}
@@ -478,7 +471,7 @@
 %   }
 % \end{latex}
 %
-% \subsubsection{博士后专用参数}
+% \subsubsection{其他参数}
 % \begin{latex}
 %   \xtusetup{
 %     clc                = {分类号},
@@ -500,14 +493,14 @@
 %
 % \subsection{前言部分}
 %
-% \subsubsection{授权说明}
-% \myentry{授权说明}
-% \DescribeMacro{\copyrightpage}
-% 生成授权说明。用法：\cs{copyrightpage}\oarg{file}。
+% \subsubsection{声明及授权说明}
+% \myentry{声明及授权说明}
+% \DescribeMacro{\declareandcopyrightpage}
+% 生成授权说明。用法：\cs{declareandcopyrightpage}\oarg{file}。
 % 可选参数为扫描得到的 PDF 文件名，例如：
 % \begin{latex}
-%   % 将签字扫描后授权文件 scan-auth.pdf 替换原始页面
-%   \copyrightpage[scan-auth.pdf]
+%   % 将签字扫描后授权文件 scan-declaration-auth.pdf 替换原始页面
+%   \declareandcopyrightpage[scan-declaration-auth.pdf]
 % \end{latex}
 %
 % \subsubsection{摘要}
@@ -784,14 +777,6 @@
 %   \end{acknowledgements}
 % \end{latex}
 %
-% \subsubsection{声明}
-% \DescribeMacro{\statement}
-% 如果使用声明扫描页，将可选参数指定为扫描后的 PDF 文件名，例如：
-%
-% \begin{latex}
-%   \statement[scan-statement.pdf]
-% \end{latex}
-%
 % \subsubsection{附录}
 %
 % 附录由 \cs{appendix} 命令开启，然后像正文一样书写。
@@ -917,7 +902,7 @@
 % \label{sec:thanks}
 % 感谢这些年来一直陪伴 \xtuthesis{} 成长的新老同学！
 %
-% 欢迎各位到 \href{http://github.com/yuanhaizhuan/xtuthesis/}{\xtuthesis{} Gixtub 主页}贡献！
+% 欢迎各位到 \href{http://github.com/yuanhaizhuan/xtuthesis/}{\xtuthesis{} Github 主页}贡献！
 %
 % \StopEventually{\PrintIndex}
 % \clearpage
@@ -928,7 +913,7 @@
 %    \begin{macrocode}
 %<cls>\NeedsTeXFormat{LaTeX2e}
 %<cls>\ProvidesClass{xtuthesis}
-%<cls>[2020/02/03 1.0.1 Xiangtan University Thesis Template]
+%<cls>[2020/02/24 1.0.1 Xiangtan University Thesis Template]
 %    \end{macrocode}
 %
 % 检查编译引擎，要求使用 \XeLaTeX。
@@ -939,7 +924,7 @@
 %
 % \subsection{定义选项}
 % \label{sec:defoption}
-% 定义论文类型以及是否涉密
+% 定义论文类型
 %    \begin{macrocode}
 %<*cls>
 \hyphenation{Xtu-Thesis}
@@ -1582,7 +1567,7 @@
 % \unicodechar{2026}、
 % \unicodechar{2E3A}，
 % 所以要根据语言设置正确的字体。
-% \footnote{\url{https://gixtub.com/CTeX-org/ctex-kit/issues/389}}
+% \footnote{\url{https://github.com/CTeX-org/ctex-kit/issues/389}}
 % 所以要根据语言设置正确的字体。
 %    \begin{macrocode}
 \newcommand\xtu@setchinese{%
@@ -2171,19 +2156,9 @@
 %
 % \subsubsection{封面和封底}
 % \label{sec:cover}
-% 定义密级参数。
-%    \begin{macrocode}
-\xtu@define@key{
-  secret-level = {
-    name = secret@level,
-  },
-  secret-year = {
-    name = secret@year,
-  },
-%    \end{macrocode}
-%
 % 论文中英文题目。
 %    \begin{macrocode}
+\xtu@define@key{
   title = {
     default = {标题},
   },
@@ -2269,7 +2244,17 @@
   },
 %    \end{macrocode}
 %
-% 博士后专用封面参数。
+% 定义密级参数。
+%    \begin{macrocode}
+  secret-level = {
+    name = secret@level,
+  },
+  secret-year = {
+    name = secret@year,
+  },
+%    \end{macrocode}
+%
+% 其他参数。
 %    \begin{macrocode}
   clc,
   udc,
@@ -2394,7 +2379,17 @@
   \pagestyle{xtu@empty}%
   \pagenumbering{Alph}%
   \xtu@pdfbookmark{-1}{\xtu@title}%
-  \xtu@coverpage % added by H.Z. Yuan
+  \ifxtu@degree@bachelor
+    \xtu@coverpage % 装订封面
+  \else
+    \ifxtu@degree@master
+      \xtu@coverpage % 装订封面
+    \else
+      \ifxtu@degree@doctor
+        \xtu@coverpage % 装订封面
+      \fi
+    \fi
+  \fi
   \xtu@titlepage
   \ifxtu@degree@graduate
     \cleardoublepage
@@ -2410,9 +2405,6 @@
 %
 %    \begin{macrocode}
 \newcommand\xtu@coverpage{%
-%  \ifxtu@degree@graduate@coverpage
-%    \xtu@degree@graduate@coverpage
-  %  \fi
   \newgeometry{
     top     = 1.0cm,
     bottom  = 4.0cm,
@@ -2433,9 +2425,7 @@
       \ifcsname lishu\endcsname
         \lishu\yihao\ziju{0.5}湘潭大学%
       \else
-           \includegraphics[width=0.6\linewidth]{logos/xtu-text-logo.pdf}%
-%%%         \includegraphics[trim=1cm 1cm 1cm 1cm, clip, width=0.6\linewidth]{xtu-text-logo.jpg}%
-%%        \includegraphics[trim=3cm 6cm 2cm 6cm, clip, width=0.6\linewidth]{xtu-text-logo.pdf}%
+         \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
       \fi
       \par
       \endgroup
@@ -2445,7 +2435,6 @@
   \begingroup
   \centering
   \parbox[t][2cm][t]{\textwidth}{%
-    %    \hskip -0.69cm%
     \ifxtu@degree@bachelor
       \centering \heiti\zihao{0}\ziju{0.3}{学士学位论文}
     \else
@@ -2522,10 +2511,6 @@
 %%%  \null\vskip 0.2cm%    %%changed by H.Z. Yuan
  \begingroup
     \centering
-%%%    \parbox[t][2cm][t]{\textwidth}{%
-%%%      \hskip -0.69cm%
-%%%      \xtu@titlepage@secret
-%%%    }\par
     \vskip 1.5cm%
     {\xtu@titlepage@title}%
     \vskip 0.85cm%
@@ -2551,10 +2536,6 @@
 %%%  \null\vskip 0.45cm% %%deleted by H.Z. Yuan
  \begingroup
     \centering
-%%%    \parbox[t][1.52cm][t]{\textwidth}{%
-%%%      \hskip -0.69cm%
-%%%      \xtu@titlepage@secret
-%%%    }\par
     \vskip 1.5cm%
     {\sffamily\yihao[1.575]\xtu@title\par}%
     \vskip 0.9cm%
@@ -2622,22 +2603,6 @@
   \end{tabular}
 }
 
-%%% \newcommand\xtu@titlepage@info@doctor{%
-%%%  \fangsong\sanhao[1.95]%
-%%%  \xtu@cover@info@tabular{2.8cm}{2.8cm}{0.82cm}{%
-%%%    \xtu@cover@item{培养单位}{}{\xtu@department}%
-%%%    \ifxtu@degree@type@academic
-%%%      \xtu@cover@item{学科}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{研究生}{\xtu@name@title}{\xtu@author}%
-%%%    \else
-%%%      \xtu@cover@item{申请人}{\xtu@name@title}{\xtu@author}%
-%%%    \fi
-%%%    \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
-%%%    \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
-%%%    \xtu@cover@item{联合导师}{\xtu@name@title}{\xtu@joint@supervisor}%
-%%%  }\par
-%%% }
-%%% changed by H.Z. Yuan
 \newcommand\xtu@titlepage@info@doctor{%
   \fangsong\sanhao[1.95]%
   \xtu@cover@info@tabular{2.8cm}{2.8cm}{0.82cm}{%
@@ -2651,23 +2616,6 @@
   }\par
 }
 
-%%%\newcommand\xtu@titlepage@info@master{%
-%%%  \fangsong\sanhao[1.95]%
-%%%  \xtu@cover@info@tabular{5.5em}{3.6cm}{0.82cm}{%
-%%%    \xtu@cover@item{培养单位}{}{\xtu@department}%
-%%%    \ifxtu@degree@type@academic
-%%%      \xtu@cover@item{学科}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{研究生}{\xtu@name@title}{\xtu@author}%
-%%%    \else
-%%%      \xtu@cover@item{工程领域}{}{\xtu@discipline}%
-%%%      \xtu@cover@item{申请人}{\xtu@name@title}{\xtu@author}%
-%%%    \fi
-%%%    \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
-%%%    \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
-%%%    \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
-%%%  }\par
-%%%}
-%%% changed by H.Z. Yuan
 \newcommand\xtu@titlepage@info@master{%
   \fangsong\sanhao[1.95]%
   \xtu@cover@info@tabular{5.5em}{3.6cm}{0.82cm}{%
@@ -2906,7 +2854,7 @@
       \xtu@CJKunderline[5.9cm]{\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}}\par
     }%
     \vskip 0.45cm%
-    {\xiaosi[2]{\ziju{1}湘潭大学}\quad （北京）\par}%
+    {\xiaosi[2]{\ziju{1}湘潭大学}\quad （湘潭）\par}%
     \vskip 0.25cm%
     {\xiaosi[2]\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}\par}%
   \end{center}%
@@ -2947,17 +2895,16 @@
 }
 %    \end{macrocode}
 %
-% \myentry{授权说明}
-% \begin{macro}{\copyrightpage}
+% \myentry{声明及授权说明}
+% \begin{macro}{\declareandcopyrightpage}
 % 授权说明
 %    \begin{macrocode}
-\newcommand{\xtu@declaration}{  %%% added by H.Z. Yuan
+\newcommand{\xtu@declaration}{
 本人郑重声明：所呈交的学位论文，是本人在导师指导下，独立
 进行研究工作所取得的成果。尽我所知，除文中已经注明引用的内容
 外，本学位论文的研究成果不包含任何他人享有著作权的内容。对本
 论文所涉及的研究工作做出贡献的其他个人和集体，均已在文中以明
 确方式标明。
-  
  }
 \newcommand{\xtu@authorization}{%
 本学位论文作者完全了解学校有关保留、使用学位论文的规定，
@@ -2965,43 +2912,26 @@
 允许论文被查阅和借阅。本人授权湘潭大学可以将本学位论文的全部
 或部分内容编入有关数据库进行检索，可以采用影印、缩印或扫描等
 复制手段保存和汇编本学位论文。
-%%% \ifxtu@degree@bachelor
-%%% 本人完全了解湘潭大学有关保留、使用学位论文的规定，即：学校有权保留学位
-%%% 论文的复印件，允许该论文被查阅和借阅；学校可以公布该论文的全部或部分内
-%%% 容，可以采用影印、缩印或其他复制手段保存该论文。
-%%% \else
-%%% 本人完全了解湘潭大学有关保留、使用学位论文的规定，即：
-%%% 湘潭大学拥有在著作权法规定范围内学位论文的使用权，其中包括：（1）已获学位的研究生
-%%% 必须按学校规定提交学位论文，学校可以采用影印、缩印或其他复制手段保存研究生上交的
-%%% 学位论文；（2）为教学和科研目的，学校可以将公开的学位论文作为资料在图书馆、资料
-%%% 室等场所供校内师生阅读，或在校园网上供校内师生浏览部分内容
-%%%  \ifxtu@degree@master
-%%% （3）根据《中华人民共和国学位条例暂行实施办法》，向国家图书馆报送可以公开的学位
-%%% 论文。\fi
-%%% 
-%%% 本人保证遵守上述规定。
-%%% \fi
 }
 \newcommand{\xtu@authorizationaddon}{%
-%%%  \ifxtu@degree@bachelor(涉密的学位论文在解密后应遵守此规定)\else （保密的论文在解密后应遵守此规定）\fi}\fi
 （涉密论文按学校规定处理）}
 \newcommand{\xtu@authorsig}{\ifxtu@degree@bachelor 签\hskip1em名：\else 作者签名：\fi}
 \newcommand{\xtu@teachersig}{导师签名：}
 \newcommand{\xtu@frontdate}{%
   日\ifxtu@degree@bachelor\hspace{1em}\else\hspace{2em}\fi 期：}
-\newcommand\copyrightpage[1][]{%
+\newcommand\declareandcopyrightpage[1][]{%
   \ifxtu@degree@postdoc\relax\else
     \ifxtu@degree@bachelor\clearpage\else\cleardoublepage\fi%
     \def\xtu@@tmp{#1}
     \ifx\xtu@@tmp\@empty
-      \ifxtu@degree@bachelor\xtu@authorization@mk\else%
+      \ifxtu@degree@bachelor\xtu@declarationauthorization@mk\else%
         \begin{list}{}{%
           \topsep\z@%
           \listparindent\parindent%
           \parsep\parskip%
           \setlength{\leftmargin}{0.9mm}%
           \setlength{\rightmargin}{0.9mm}}%
-        \item[]\xtu@authorization@mk%
+        \item[]\xtu@declarationauthorization@mk%
         \end{list}%
       \fi%
     \else
@@ -3014,7 +2944,7 @@
 %
 % 支持扫描文件替换。
 %    \begin{macrocode}
-\newcommand{\xtu@authorization@mk}{%
+\newcommand{\xtu@declarationauthorization@mk}{%
   \ifxtu@degree@bachelor\vspace*{0.2cm}\else\vspace*{0.2cm}\fi % shit code!
   \begin{center}\yihao\heiti 湘潭大学\end{center}
   \vskip0.2cm    
@@ -3159,43 +3089,16 @@
 % \end{environment}
 %
 %
-% \subsubsection{致谢以及声明}
-% \label{sec:ackanddeclare}
+% \subsubsection{致谢}
+% \label{sec:ack}
 %
 % \begin{environment}{acknowledgements}
-% 支持扫描文件替换。
 %    \begin{macrocode}
-\newcommand\xtu@declarename{声\hspace{\ccwd}明}
-\newcommand{\xtu@declaretext}{本人郑重声明：所呈交的学位论文，是本人在导师指导下
-  ，独立进行研究工作所取得的成果。尽我所知，除文中已经注明引用的内容外，本学位论
-  文的研究成果不包含任何他人享有著作权的内容。对本论文所涉及的研究工作做出贡献的
-  其他个人和集体，均已在文中以明确方式标明。}
-\newcommand{\xtu@signature}{签\hspace{1em}名：}
-\newcommand{\xtu@backdate}{日\hspace{1em}期：}
-%    \end{macrocode}
-%
 % 定义致谢与声明环境。
 %    \begin{macrocode}
 \newenvironment{acknowledgements}{%
   \xtu@chapter*{\xtu@ack@name}%
 }{}
-%    \end{macrocode}
-%
-% 声明部分
-%    \begin{macrocode}
-\newcommand\statement[1][]{%
-  \def\xtu@@tmp{#1}%
-  \ifx\xtu@@tmp\@empty
-    \xtu@chapter*{\xtu@declarename}%
-    \par{\xiaosi\parindent2em\xtu@declaretext}\vskip2cm%
-    {\xiaosi\hfill\xtu@signature\xtu@underline[2.5cm]\relax
-      \xtu@backdate\xtu@underline[2.5cm]\relax}%
-  \else
-    \includepdf[pagecommand={\thispagestyle{xtu@empty}%
-      \addcontentsline{toc}{chapter}{\xtu@declarename}%
-    }]{#1}%
-  \fi
-}
 %    \end{macrocode}
 % \end{environment}
 %
@@ -3370,11 +3273,9 @@
 % \subsection{附录}
 % \label{sec:appendix}
 %
-% 研究生和本科生的写作指南均未规定附录的节标题是否加入目录，
+% 研究生和本科生均未规定附录的节标题是否加入目录，
 % 但是从示例来看，目录中只出现附录的 chapter 标题，
 % 不出现附录中的 section 及 subsection 的标题。
-% 部分院系（例如自动化系）的格式审查的老师甚至一致口头如此要求。
-% （\href{https://github.com/yuanhaizhuan/xtuthesis/pull/425}{\#425}）
 %    \begin{macrocode}
 \xtu@define@key{
   toc-depth = {
@@ -3385,7 +3286,7 @@
 \g@addto@macro\appendix{\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}}
 %    \end{macrocode}
 %
-% 本科生《写作指南》有独特的要求：附录 A 为外文资料的调研阅读报告或书面翻译，
+% 本科生有独特的要求：附录 A 为外文资料的调研阅读报告或书面翻译，
 % 并且要分别附上独立的参考文献和外文资料的原文索引。
 % 所以这里定义 \env{survey} 和 \env{translation} 专门处理这两种情况，
 % 其中参考文献使用了 \pkg{bibunits} 宏包的功能。
@@ -3547,10 +3448,10 @@
 %    \end{macrocode}
 %
 % \pkg{hyperref} 与 \pkg{unicode-math} 存在一些兼容性问题，见
-% \href{https://gixtub.com/ustctug/ustcthesis/issues/223}{%
+% \href{https://github.com/ustctug/ustcthesis/issues/223}{%
 %   ustctug/ustcthesis\#223}，
-% \href{https://gixtub.com/ho-tex/hyperref/pull/90}{ho-tex/hyperref\#90} 和
-% \href{https://gixtub.com/ustctug/ustcthesis/issues/235}{%
+% \href{https://github.com/ho-tex/hyperref/pull/90}{ho-tex/hyperref\#90} 和
+% \href{https://github.com/ustctug/ustcthesis/issues/235}{%
 %   ustctug/ustcthesis/\#235}。
 %    \begin{macrocode}
   \@ifpackagelater{hyperref}{2019/04/27}{}{%
