@@ -5,7 +5,7 @@ LaTeX Thesis Template for Xiangtan University (thuthesis-based development)
 
 # 环境配置（二选一，推荐一）
 
-## 方案一： texlive + texmaker，支持 Windows, Linux, Mac 操作系统。
+## 方案一（开发环境）： texlive + texmaker，支持 Windows, Linux, Mac 操作系统。
 ### texlive下载网址： https://www.tug.org/texlive/
 ### texmaker下载网址： https://www.xm1math.net/texmaker/
 ### Ubuntu 系统下可直接命令安装：
@@ -23,7 +23,7 @@ git clone https://github.com/yuanhaizhuan/xtuthesis.git
 ```
 
 ## 更新
-打开终端，进入目录xtuthesis, 执行命令（Windows 用户在文件夹空白处按`Shift+鼠标右键`，点击“在此处打开命令行窗口”）：
+打开终端，进入目录 xtuthesis, 执行命令（Windows 用户在文件夹空白处按`Shift+鼠标右键`，点击“在此处打开命令行窗口”）：
 ```shell
     xetex xtuthesis.ins
 ```
