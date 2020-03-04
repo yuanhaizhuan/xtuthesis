@@ -1,0 +1,74 @@
+\contentsline {section}{\numberline {1}模板介绍}{3}{section.1}
+\contentsline {section}{\numberline {2}安装}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}模板的组成}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}生成模板}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}编译论文}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}GNU make}{4}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}latexmk}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}\XeLaTeX }{5}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}升级}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}使用说明}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}示例文件}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}论文选项}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}学位类型}{11}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}字体配置}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}封面信息}{12}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}论文标题}{12}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}申请学位名称}{12}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}院系名称}{13}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}学科名称}{13}{subsubsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.5}研究领域}{13}{subsubsection.3.4.5}
+\contentsline {subsubsection}{\numberline {3.4.6}作者姓名}{13}{subsubsection.3.4.6}
+\contentsline {subsubsection}{\numberline {3.4.7}导师}{13}{subsubsection.3.4.7}
+\contentsline {subsubsection}{\numberline {3.4.8}成文日期}{14}{subsubsection.3.4.8}
+\contentsline {subsubsection}{\numberline {3.4.9}密级}{14}{subsubsection.3.4.9}
+\contentsline {subsubsection}{\numberline {3.4.10}其他参数}{14}{subsubsection.3.4.10}
+\contentsline {subsection}{\numberline {3.5}前言部分}{15}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}声明及授权说明}{15}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}摘要}{15}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}目录和索引表}{15}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}符号对照表}{16}{subsubsection.3.5.4}
+\contentsline {subsection}{\numberline {3.6}正文部分}{17}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}数学环境}{17}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}列表环境}{18}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}引用方式}{18}{subsubsection.3.6.3}
+\contentsline {subsection}{\numberline {3.7}其他部分}{18}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1}参考文献}{18}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.2}致谢}{19}{subsubsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.3}附录}{19}{subsubsection.3.7.3}
+\contentsline {subsubsection}{\numberline {3.7.4}简历}{20}{subsubsection.3.7.4}
+\contentsline {subsection}{\numberline {3.8}书脊}{21}{subsection.3.8}
+\contentsline {section}{\numberline {4}致谢}{22}{section.4}
+\contentsline {section}{\numberline {5}实现细节}{23}{section.5}
+\contentsline {subsection}{\numberline {5.1}基本信息}{23}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}定义选项}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}装载宏包}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}页面设置}{28}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}主文档格式}{29}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Three matters}{29}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}字体}{29}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}语言设置}{33}{subsubsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.4}页眉页脚}{35}{subsubsection.5.5.4}
+\contentsline {subsubsection}{\numberline {5.5.5}段落}{35}{subsubsection.5.5.5}
+\contentsline {subsubsection}{\numberline {5.5.6}脚注}{35}{subsubsection.5.5.6}
+\contentsline {subsubsection}{\numberline {5.5.7}数学相关}{36}{subsubsection.5.5.7}
+\contentsline {subsubsection}{\numberline {5.5.8}浮动对象以及表格}{38}{subsubsection.5.5.8}
+\contentsline {subsubsection}{\numberline {5.5.9}章节标题}{39}{subsubsection.5.5.9}
+\contentsline {subsubsection}{\numberline {5.5.10}目录}{42}{subsubsection.5.5.10}
+\contentsline {subsubsection}{\numberline {5.5.11}封面和封底}{43}{subsubsection.5.5.11}
+\contentsline {subsubsection}{\numberline {5.5.12}摘要}{59}{subsubsection.5.5.12}
+\contentsline {subsubsection}{\numberline {5.5.13}主要符号表}{60}{subsubsection.5.5.13}
+\contentsline {subsubsection}{\numberline {5.5.14}致谢}{60}{subsubsection.5.5.14}
+\contentsline {subsubsection}{\numberline {5.5.15}图表索引}{61}{subsubsection.5.5.15}
+\contentsline {subsection}{\numberline {5.6}参考文献}{61}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}附录}{63}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}个人简历}{65}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}其他宏包的设置}{65}{subsection.5.9}
+\contentsline {subsubsection}{\numberline {5.9.1}\pkg {hyperref} 宏包}{65}{subsubsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.9.2}\pkg {nomencl} 宏包}{66}{subsubsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.3}\pkg {longtable} 宏包}{67}{subsubsection.5.9.3}
+\contentsline {subsubsection}{\numberline {5.9.4}\pkg {siunitx} 宏包}{67}{subsubsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.5}\pkg {ntheorem} 宏包}{67}{subsubsection.5.9.5}
+\contentsline {subsection}{\numberline {5.10}书脊}{68}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}其它}{68}{subsection.5.11}
+\contentsline {section}{\numberline {6}索引}{68}{section.6}
