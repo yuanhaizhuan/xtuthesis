@@ -1,0 +1,88 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xetex 2019.9.19)  4 MAR 2020 21:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**xtuthesis.ins
+(./xtuthesis.ins (/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count28
+\emptyLines=\count29
+\processedLines=\count30
+\commentsRemoved=\count31
+\commentsPassed=\count32
+\codeLinesPassed=\count33
+\TotalprocessedLines=\count34
+\TotalcommentsRemoved=\count35
+\TotalcommentsPassed=\count36
+\TotalcodeLinesPassed=\count37
+\NumberOfFiles=\count38
+\inFile=\read1
+\inputcheck=\read2
+\@tempcnta=\count39
+\off@0=\count40
+\off@1=\count41
+\off@2=\count42
+\off@3=\count43
+\off@4=\count44
+\off@5=\count45
+\off@6=\count46
+\off@7=\count47
+\off@8=\count48
+\off@9=\count49
+\off@10=\count50
+\off@11=\count51
+\off@12=\count52
+\off@13=\count53
+\off@14=\count54
+\off@15=\count55
+\@temptokena=\toks13
+\@maxfiles=\count56
+\@maxoutfiles=\count57
+
+Utility: `docstrip' 2.5e <2014/09/29>
+English documentation    <2017/03/13>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) xtuthesis.cls dtx-style.sty 
+\openout0 = `xtuthesis.cls'.
+
+\openout1 = `dtx-style.sty'.
+
+
+Processing file xtuthesis.dtx (cls) -> xtuthesis.cls
+                              (dtx-style) -> dtx-style.sty
+File xtuthesis.dtx ended by \endinput.
+Lines  processed: 3752
+Comments removed: 1937
+Comments  passed: 4
+Codelines passed: 1802
+
+***********************************************************
+*
+* To finish the installation you have to move the following
+* files into a directory searched by TeX:
+*
+* The recommended directory is TEXMF/tex/latex/xtuthesis
+*
+*   xtuthesis.cls
+*   xtuthesis-author-year.bst
+*   xtuthesis-numeric.bst
+*   xtuthesis-bachelor.bst
+*   xtu-fonts.pdf
+*
+* To produce the documentation run the files ending with
+* `.dtx' through LaTeX.
+*
+* Happy TeXing!
+***********************************************************
+ )
+No pages of output.

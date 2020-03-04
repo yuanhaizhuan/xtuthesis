@@ -3,7 +3,7 @@ LaTeX Thesis Template for Xiangtan University (thuthesis-based development)
 
 此宏包旨在建立一个简单易用的湘潭大学学位论文 LaTeX 模板，该模板基于薛瑞尼教授开发的清华大学学位论文 LaTeX 模板做了一定的修改，在此对薛瑞尼教授表示真诚的感谢。
 
-# 环境配置（二选一，推荐一）
+# 环境配置（推荐方案一）
 
 ## 方案一（开发环境）： texlive + texmaker，支持 Windows, Linux, Mac 操作系统。
 ### texlive下载网址： https://www.tug.org/texlive/
@@ -30,8 +30,8 @@ git clone https://github.com/yuanhaizhuan/xtuthesis.git
 即可得到 `xtuthesis.cls` 等模板文件。
 
 
-# 模板使用
-## Makefile的用法
+# 模板使用 （推荐方法一，适合 Linux 操作系统）
+## 编译方法一，使用 Makefile 文件，命令如下
 ```shell
 make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 ```
@@ -43,4 +43,7 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 * `make clean`     删除示例文件的中间文件（不含 main.pdf）；
 * `make cleanall`  删除示例文件的中间文件和 main.pdf；
 * `make distclean` 删除示例文件和模板的所有中间文件和 PDF。
+### 优点：更新索引时，无需手动多次编译。
 
+## 编译方法二，直接使用 xelatex 和 bibtex（用于参考文献编译） 命令文件。
+### 缺点：更新索引时，需手动多次编译。

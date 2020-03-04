@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {第1章}带 English 的标题}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}封面相关}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}字体命令}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}表格样本}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}基本表格}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}复杂表格}{3}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}其它}{6}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}定理环境}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}参考文献}{10}{section.1.5}
+\contentsline {section}{\numberline {1.6}公式}{11}{section.1.6}
+\contentsline {chapter}{\numberline {第2章}图表公式例子}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}其它例子}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}绘图}{13}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}插图}{13}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}一个图形}{13}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}多个图形}{14}{subsubsection.2.1.2.2}
+\contentsline {chapter}{参考文献}{16}{section*.20}
+\contentsline {chapter}{致\hspace {\ccwd }谢}{18}{section*.22}
+\setcounter {tocdepth}{0}
+\contentsline {chapter}{\numberline {附录 A}单目标规划}{19}{appendix.A}
+\contentsline {section}{\numberline {A.1}Single-Objective Programming}{19}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Linear Programming}{20}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Nonlinear Programming}{21}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Integer Programming}{22}{subsection.A.1.3}
+\contentsline {section}{\numberline {A.2}单目标规划}{22}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}线性规划}{22}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}非线性规划}{23}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}整数规划}{24}{subsection.A.2.3}
+\contentsline {chapter}{个人简历、在学期间发表的学术论文与研究成果}{25}{section*.29}
