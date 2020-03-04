@@ -22,10 +22,10 @@ sudo apt install texmaker
 git clone https://github.com/yuanhaizhuan/xtuthesis.git
 ```
 
-## 更新 (使用 Makefile 文件编译可以略去此步)
-打开终端，进入目录 xtuthesis, 执行命令（Windows 用户在文件夹空白处按`Shift+鼠标右键`，点击“在此处打开命令行窗口”）：
+## 更新 (若使用 Makefile 文件编译可略去此步)
+打开终端（Windows 用户打开命令行窗口），进入目录 xtuthesis, 执行命令：
 ```shell
-    xetex xtuthesis.ins
+    xelatex xtuthesis.ins
 ```
 即可得到 `xtuthesis.cls` 等模板文件。
 
