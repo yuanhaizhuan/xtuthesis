@@ -43,5 +43,5 @@ make [{all|thesis|spine|doc|clean|cleanall|distclean}]
 * `make distclean` 删除示例文件和模板的所有中间文件和 PDF（不更新模板，勿用）。
 + 优点：更新索引时，无需手动多次编译。
 
-### 编译方法二： 直接使用 xelatex 和 bibtex（用于参考文献编译） 命令文件。
+### 编译方法二： 直接使用 xelatex 和 bibtex（用于参考文献编译） 命令编译文件。
 + 缺点：更新索引时，需手动多次编译。
