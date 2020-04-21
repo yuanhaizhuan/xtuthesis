@@ -3,9 +3,9 @@ LaTeX Thesis Template for Xiangtan University (thuthesis-based development)
 
 此宏包旨在建立一个简单易用的湘潭大学学位论文 LaTeX 模板，该模板基于薛瑞尼教授开发的清华大学学位论文 LaTeX 模板做了一定的修改，在此对薛瑞尼教授表示真诚的感谢。
 
-## 环境配置（推荐方案一）
+## 环境配置
 
-### 方案一（开发环境）： texlive + texmaker，支持 Windows, Linux, Mac 操作系统。
+### 开发环境： texlive + texmaker，支持 Windows, Linux, Mac 操作系统。
 + texlive下载网址： https://www.tug.org/texlive/
 + texmaker下载网址： https://www.xm1math.net/texmaker/
 + Ubuntu 系统下可直接命令安装：
@@ -13,8 +13,6 @@ LaTeX Thesis Template for Xiangtan University (thuthesis-based development)
 sudo apt install texlive-full
 sudo apt install texmaker
 ```
-### 方案二： texstudio
-+ texstudio下载网址： http://texstudio.org/
 
 ## 模板下载及更新
 ### 下载开发版本：[GitHub](https://github.com/yuanhaizhuan/xtuthesis)
