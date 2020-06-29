@@ -133,6 +133,7 @@
     choices = {
       academic,
       professional,
+      course,
     },
     name = degree@type,
   },
@@ -716,6 +717,13 @@
     % default = {Computer Science and Technology},
     name    = discipline@en,
   },
+  coursename = {
+    % default = {机器学习},
+  },
+  coursename* = {
+    % default = {Computer Science and Technology},
+    name    = coursename@en,
+  },
   research = {
     % default = {计算流体力学},
   },
@@ -819,12 +827,17 @@
   \xtu@name@title@format{\xtu@@name}{\xtu@@title}%
 }
 \renewcommand\maketitle{%
-  \cleardoublepage
-  \pagestyle{xtu@empty}%
+   \cleardoublepage
+   \pagestyle{xtu@empty}%
   \pagenumbering{Alph}%
   \xtu@pdfbookmark{-1}{\xtu@title}%
   \ifxtu@degree@bachelor
+    \ifxtu@degree@type@academic
     \xtu@coverpage % 装订封面
+    \fi
+    \ifxtu@degree@type@professional
+    \xtu@coverpage % 装订封面
+    \fi
   \else
     \ifxtu@degree@master
       \xtu@coverpage % 装订封面
@@ -833,8 +846,9 @@
         \xtu@coverpage % 装订封面
       \fi
     \fi
-  \fi
-  \xtu@titlepage
+   \fi
+
+   \xtu@titlepage
   \ifxtu@degree@graduate
     \cleardoublepage
     \xtu@titlepage@en
@@ -1037,8 +1051,12 @@
   \ifxtu@degree@type@academic
     \xtu@titlepage@en@graduate@academic
   \else
-    \xtu@titlepage@en@graduate@professional
-  \fi
+    \ifxtu@degree@type@course
+      \xtu@titlepage@en@graduate@academic
+    \else
+      \xtu@titlepage@en@graduate@professional
+    \fi
+ \fi
   \clearpage
   \restoregeometry
 }
@@ -1156,12 +1174,17 @@
       \ifcsname lishu\endcsname
         \lishu\yihao\ziju{0.5}湘潭大学%
       \else
-        \includegraphics{xtu-text-logo.pdf}%
+      \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
       \fi
       \par
     \endgroup
     \vskip 0.94cm%
-    {\sffamily\bfseries\xiaochu\ziju{0.5}综合论文训练\par}%
+    \ifxtu@degree@type@course
+        {\sffamily\bfseries\xiaochu\ziju{0.5}课程实践论文\par}%
+    \else
+        {\sffamily\bfseries\xiaochu\ziju{0.5}综合论文训练\par}%
+    \fi
+  %    {\sffamily\bfseries\xiaochu\ziju{0.5}综合论文训练\par}%
     \vskip 2.3cm%
     \parbox[t][2.4cm][t]{\textwidth}{%
       \heiti\xiaoer[1.56]%
@@ -1172,7 +1195,7 @@
       \CJKunderline[skip=false, thickness=0.05em, depth=0.12em]{\xtu@title}\par
     }\par
     \vskip 2.5cm%
-    \parbox[t][6.0cm][t]{\textwidth}{%
+    \parbox[t][6.5cm][t]{\textwidth}{%
       \fangsong\sanhao[2.3]%
       \leftskip=2.5cm%
       \parindent=\z@
@@ -1184,11 +1207,18 @@
       \def\xtu@name@title@format##1##2{%
         \xtu@stretch{3em}{##1}\quad ##2%
       }
-      \xtu@cover@item{系别}{}{\xtu@department}%
+      \xtu@cover@item{学院}{}{\xtu@department}%
       \xtu@cover@item{专业}{}{\xtu@discipline}%
+      \ifxtu@degree@type@course
+      \xtu@cover@item{课程}{}{\xtu@coursename}%
+      \fi
       \xtu@cover@item{姓名}{\xtu@name@title}{\xtu@author}%
+      \ifxtu@degree@type@course
+      \xtu@cover@item{任课教师}{\xtu@name@title}{\xtu@supervisor}%
+      \else
       \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
       \xtu@cover@item{辅导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
+      \fi
     }\par
     {\xiaosi\xtu@format@date{\xtu@date@zh@digit}{\xtu@date}\par}%
   \endgroup
@@ -1258,7 +1288,7 @@
       研究工作期满时间\quad\xtu@format@date{\xtu@date@zh@digit}{\xtu@end@date}\par
     }%
     \vskip 2.1cm%
-    {\xiaosi[2.6]湘潭大学人事部（北京）\par}%
+    {\xiaosi[2.6]湘潭大学人事部（湖南湘潭）\par}%
     \vskip 0.6cm%
     {\wuhao\xtu@format@date{\xtu@date@zh@digit@short}{\xtu@date}\par}%
   \end{center}%
