@@ -165,7 +165,7 @@
 \else
   \RequirePackage[perpage,hang]{footmisc}
 \fi
-\RequirePackage{CJKfntef}
+\RequirePackage{xeCJKfntef}
 \RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage[sort&compress]{natbib}
@@ -1201,7 +1201,7 @@
       \parindent=\z@
       \def\xtu@cover@item##1##2##3{%
         \ifx##3\@empty\else
-          \xtu@fixed@box{4em}{##1}：##2{##3}\\
+          \xtu@fixed@box{4em}{##1}：##2{##3}\par
         \fi
       }%
       \def\xtu@name@title@format##1##2{%
