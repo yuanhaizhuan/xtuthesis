@@ -356,7 +356,7 @@
 }
 \ifxtu@language@chinese
   \ctexset{
-    chapter/name   = {第,章},
+    chapter/name   = {},
     appendixname   = 附录,
     contentsname   = {目\hspace{\ccwd}录},
     listfigurename = 插图索引,
@@ -636,7 +636,7 @@
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
     \ifxtu@degree@bachelor\vskip 6bp\else\vskip 4bp\fi \@plus\p@
-    \setlength\@tempdima{4em}%
+    \setlength\@tempdima{1.5em}%
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
