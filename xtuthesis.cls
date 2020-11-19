@@ -1171,11 +1171,7 @@
       \fi\par
     }\par
     \begingroup
-      \ifcsname lishu\endcsname
-        \lishu\yihao\ziju{0.5}湘潭大学%
-      \else
       \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
-      \fi
       \par
     \endgroup
     \vskip 0.94cm%
