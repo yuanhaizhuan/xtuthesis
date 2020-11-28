@@ -165,7 +165,7 @@
 \else
   \RequirePackage[perpage,hang]{footmisc}
 \fi
-\RequirePackage{CJKfntef}
+\RequirePackage{xeCJKfntef}
 \RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage[sort&compress]{natbib}
@@ -356,7 +356,7 @@
 }
 \ifxtu@language@chinese
   \ctexset{
-    chapter/name   = {第,章},
+    chapter/name   = {},
     appendixname   = 附录,
     contentsname   = {目\hspace{\ccwd}录},
     listfigurename = 插图索引,
@@ -636,7 +636,7 @@
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
     \ifxtu@degree@bachelor\vskip 6bp\else\vskip 4bp\fi \@plus\p@
-    \setlength\@tempdima{4em}%
+    \setlength\@tempdima{1.5em}%
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
@@ -1171,11 +1171,7 @@
       \fi\par
     }\par
     \begingroup
-      \ifcsname lishu\endcsname
-        \lishu\yihao\ziju{0.5}湘潭大学%
-      \else
       \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
-      \fi
       \par
     \endgroup
     \vskip 0.94cm%
@@ -1201,7 +1197,7 @@
       \parindent=\z@
       \def\xtu@cover@item##1##2##3{%
         \ifx##3\@empty\else
-          \xtu@fixed@box{4em}{##1}：##2{##3}\\
+          \xtu@fixed@box{4em}{##1}：##2{##3}\par
         \fi
       }%
       \def\xtu@name@title@format##1##2{%

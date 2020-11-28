@@ -1215,10 +1215,10 @@
 \fi
 %    \end{macrocode}
 %
-% 利用 \pkg{CJKfntef} 实现汉字的下划线和盒子内两段对齐，并可以避免
+% 利用 \pkg{xeCJKfntef} 实现汉字的下划线和盒子内两段对齐，并可以避免
 % \cs{makebox}\oarg{width}\oarg{s} 可能产生的 underful boxes。
 %    \begin{macrocode}
-\RequirePackage{CJKfntef}
+\RequirePackage{xeCJKfntef}
 %    \end{macrocode}
 %
 % 表格控制
@@ -1600,7 +1600,7 @@
 %    \begin{macrocode}
 \ifxtu@language@chinese
   \ctexset{
-    chapter/name   = {第,章},
+    chapter/name   = {},
     appendixname   = 附录,
     contentsname   = {目\hspace{\ccwd}录},
     listfigurename = 插图索引,
@@ -2123,7 +2123,7 @@
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}%
     \ifxtu@degree@bachelor\vskip 6bp\else\vskip 4bp\fi \@plus\p@
-    \setlength\@tempdima{4em}%
+    \setlength\@tempdima{1.5em}%
     \begingroup
       \parindent \z@ \rightskip \@pnumwidth
       \parfillskip -\@pnumwidth
@@ -2802,11 +2802,11 @@
       \fi\par
     }\par
     \begingroup
-      \ifcsname lishu\endcsname
-        \lishu\yihao\ziju{0.5}湘潭大学%
-      \else
+%      \ifcsname lishu\endcsname
+%        \lishu\yihao\ziju{0.5}湘潭大学%
+%      \else
       \includegraphics[width=0.6\linewidth]{xtuthesis-logo.pdf}%
-      \fi
+%      \fi
       \par
     \endgroup
     \vskip 0.94cm%
@@ -2832,7 +2832,7 @@
       \parindent=\z@
       \def\xtu@cover@item##1##2##3{%
         \ifx##3\@empty\else
-          \xtu@fixed@box{4em}{##1}：##2{##3}\\
+          \xtu@fixed@box{4em}{##1}：##2{##3}\par
         \fi
       }%
       \def\xtu@name@title@format##1##2{%
