@@ -8,7 +8,7 @@
 %% 
 %% This is a generated file.
 %% 
-%% Copyright (C) 2005-2020 by Ruini Xue <xueruini@gmail.com>
+%% Copyright (C) 2005-2021 by Ruini Xue <xueruini@gmail.com>
 %% 
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -429,10 +429,11 @@
   \renewcommand{\footrulewidth}{0pt}}
 \fancypagestyle{xtu@headings}{%
   \fancyhead{}
-  \fancyhead[C]{\wuhao\normalfont\leftmark}
+%%%  \fancyhead[C]{\wuhao\normalfont\leftmark} %% delete facyhead by H.Z. Yuan, 2021.4.22
   \fancyfoot{}
   \fancyfoot[C]{\wuhao\thepage}
-  \renewcommand{\headrulewidth}{0.4pt}
+%%%%  \renewcommand{\headrulewidth}{0.4pt}
+ \renewcommand{\headrulewidth}{0pt}  %%% set head rule width as 0, by H.Z. Yuan, 2021.4.22
   \renewcommand{\footrulewidth}{0pt}}
 \ctexset{%
   punct=quanjiao,
@@ -769,14 +770,14 @@
 }
 \newcommand\xtu@date@zh@digit[3]{#1 年 \number#2 月 \number#3 日}
 \newcommand\xtu@date@zh@digit@short[3]{#1 年 \number#2 月}
-\newcommand\xtu@date@zh@short[3]{\zhdigits{#1}年\zhnumber{#2}月}
+\newcommand\xtu@date@zh@short[3]{\zhdigits{#1}年\zhnumber{#2}月\zhnumber{#3}日}
 \newcommand\xtu@date@month[1]{%
   \ifcase\number#1\or
     January\or February\or March\or April\or May\or June\or
     July\or August\or September\or October\or November\or December%
   \fi
 }
-\newcommand\xtu@date@en@short[3]{\xtu@date@month{#2}, #1}
+\newcommand\xtu@date@en@short[3]{\xtu@date@month{#2} #3, #1}
 \newcommand\xtu@underline[2][6em]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
 \newcommand\xtu@CJKunderline[2][6em]{\CJKunderline*{\hb@xt@ #1{\hss#2\hss}}}
 \newcommand\xtu@fixed@box[2]{%
@@ -1018,7 +1019,7 @@
     \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
     \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
     \xtu@cover@item{学院名称}{}{\xtu@department}%
-    \xtu@cover@item{学科专业}{\xtu@name@title}{\xtu@discipline}%
+    \xtu@cover@item{学科专业}{}{\xtu@discipline}%
     \xtu@cover@item{研究方向}{\xtu@name@title}{\xtu@research}%
   }\par
 }
@@ -1031,7 +1032,7 @@
     \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
     \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
     \xtu@cover@item{学院名称}{}{\xtu@department}%
-    \xtu@cover@item{学科专业}{\xtu@name@title}{\xtu@discipline}%
+    \xtu@cover@item{学科专业}{}{\xtu@discipline}%
     \xtu@cover@item{研究方向}{\xtu@name@title}{\xtu@research}%
   }\par
 }
