@@ -2377,7 +2377,7 @@
 }
 \newcommand\xtu@name@title@format[2]{%
   \xtu@pad{3cm}{\xtu@stretch{4em}{#1}}%
-  \xtu@stretch{3em}{#2}%
+  \xtu@stretch{0em}{#2}%
 }
 \newcommand\xtu@name@title[1]{%
   \setcounter{xtu@csl@count}{0}%
@@ -2634,8 +2634,8 @@
     \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
     \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
     \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
-    \xtu@cover@item{学院名称}{}{\xtu@department}%
-    \xtu@cover@item{学科专业}{}{\xtu@discipline}%
+    \xtu@cover@item{学院名称}{\xtu@name@title}{\xtu@department}%
+    \xtu@cover@item{学科专业}{\xtu@name@title}{\xtu@discipline}%
     \xtu@cover@item{研究方向}{\xtu@name@title}{\xtu@research}%
   }\par
 }
@@ -2647,8 +2647,8 @@
     \xtu@cover@item{指导教师}{\xtu@name@title}{\xtu@supervisor}%
     \xtu@cover@item{副指导教师}{\xtu@name@title}{\xtu@associate@supervisor}%
     \xtu@cover@item{联合指导教师}{\xtu@name@title}{\xtu@joint@supervisor}%
-    \xtu@cover@item{学院名称}{}{\xtu@department}%
-    \xtu@cover@item{学科专业}{}{\xtu@discipline}%
+    \xtu@cover@item{学院名称}{\xtu@name@title}{\xtu@department}%
+    \xtu@cover@item{学科专业}{\xtu@name@title}{\xtu@discipline}%
     \xtu@cover@item{研究方向}{\xtu@name@title}{\xtu@research}%
   }\par
 }
